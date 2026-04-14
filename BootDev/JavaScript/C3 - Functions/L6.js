@@ -1,0 +1,22 @@
+/*
+TODO:
+Assignment
+Complete the reformat function. It takes a message string and a formatter function as input:
+
+Apply the given formatter three times to the message
+Add a prefix of TEXTIO: to the result
+Return the final string
+For example, if the message is "General Kenobi" and the formatter adds a period to the end of the string, the final result should be:
+
+TEXTIO: General Kenobi...
+*/
+
+
+function reformat(message, formatter) {
+  // ?
+  const firstResult = formatter(message);
+  const secondResult = formatter(firstResult);
+  const thirdResult = formatter(secondResult);
+
+  return `TEXTIO: ${thirdResult}`
+}
